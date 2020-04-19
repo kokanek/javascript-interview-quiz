@@ -45,6 +45,11 @@ let b = 15;
             readOnly: true
           }}
         />
+
+        <div className="optionRow"><h1>[1]</h1><div className="options"><code>undefined</code></div><button onClick={() => { }}><strong>CHOOSE</strong></button></div>
+        <div className="optionRow"><h1>[2]</h1><div className="options"><code>null</code></div><button><strong>CHOOSE</strong></button></div>
+        <div className="optionRow"><h1>[3]</h1><div className="options"><code>0</code></div><button><strong>CHOOSE</strong></button></div>
+        <div className="optionRow"><h1>[4]</h1><div className="options"><code>1</code></div><button><strong>CHOOSE</strong></button></div>
       </div>
     )
   }
