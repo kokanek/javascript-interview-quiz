@@ -29,8 +29,7 @@ export default class App extends Component {
   }
 
   render() {
-    let {code} = questions[0];
-    let {options} = questions[0];
+    let {code, options, explain} = questions[0];
 
     return (
       <div className="main">
@@ -54,24 +53,29 @@ export default class App extends Component {
 
           {options.map((option, index) =>
             (<div className="optionRow"><h1>[1]</h1><div className="options"><code>{option.value}</code></div>
-                <button onClick={() => this.processAnswer(option.correct)}><strong>CHOOSE</strong></button>
+              <button onClick={this.state.showAnswer ? () => { } : () => this.processAnswer(option.correct)} 
+                  className={this.state.showAnswer ? (option.correct ? 'correct' : 'wrong') : ''}><strong>CHOOSE</strong></button>
               </div>)
           )}
-          <button onClick={() => this.setState({showAnswer: true})}>show</button>
         </div>
-        {this.state.showAnswer && <div className="answer">
-          {this.state.correctAnswer && <div>
-            <Title level={2} style={{ color: '#efefef' }}>Congratulations!</Title>
-            <Title level={4} style={{ color: '#efefef88' }}>You chose the right answer</Title>
-          </div>}
-          {!this.state.correctAnswer && <div>
-            <Title level={2} style={{ color: '#efefef' }}>Oops!</Title>
-            <Title level={4} style={{ color: '#efefef88' }}>You chose the wrong answer</Title>
-          </div>}
-          <div class="o-video">
-            <iframe src="https://www.youtube.com/embed/2RkmCbisaWA" allowfullscreen></iframe>
+        {this.state.showAnswer && 
+        <>
+          <div className="separator"></div>
+          <div className="answer">
+            {this.state.correctAnswer && <div>
+              <Title level={2} style={{ color: '#efefef' }}>Congratulations!</Title>
+              <Title level={4} style={{ color: '#efefef88' }}>You chose the <span style={{ color: '#09ff99'}}>right</span> answer.</Title>
+            </div>}
+            {!this.state.correctAnswer && <div>
+              <Title level={2} style={{ color: '#efefef' }}>Oops!</Title>
+              <Title level={4} style={{ color: '#efefef' }}>You chose the <span style={{ color: '#ff0999' }}>wrong</span> answer.</Title>
+            </div>}
+            <Title level={4} style={{ color: '#efefef88' }}>{explain}</Title>
+            <div class="o-video">
+              <iframe src="https://www.youtube.com/embed/2RkmCbisaWA" allowfullscreen></iframe>
+            </div>
           </div>
-        </div>}
+        </>}
       </div>
     )
   }

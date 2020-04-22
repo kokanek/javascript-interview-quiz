@@ -35,6 +35,13 @@ body {
   .answer {
     width: 50%;
   }
+
+  .separator {
+    width: 2px;
+    background-color: #efefef;
+    min-height: 90vh;
+    margin: 40px 0;
+  }
 }
 
 .question {
@@ -58,6 +65,16 @@ body {
 
 .answer {
   margin: 40px;
+}
+
+.correct {
+  background-color: #09ff99;
+  border: none;
+}
+
+.wrong {
+  background-color: #ff0999;
+  border: none;
 }
 
 .topbar {
