@@ -64,11 +64,11 @@ export default class App extends Component {
           <div className="answer">
             {this.state.correctAnswer && <div>
               <Title level={2} style={{ color: '#efefef' }}>Congratulations!</Title>
-              <Title level={4} style={{ color: '#efefef88' }}>You chose the <span style={{ color: '#09ff99'}}>right</span> answer.</Title>
+              <Title level={4} style={{ color: '#efefefdd' }}>You chose the <span style={{ color: '#09ff99'}}>right</span> answer.</Title>
             </div>}
             {!this.state.correctAnswer && <div>
               <Title level={2} style={{ color: '#efefef' }}>Oops!</Title>
-              <Title level={4} style={{ color: '#efefef' }}>You chose the <span style={{ color: '#ff0999' }}>wrong</span> answer.</Title>
+              <Title level={4} style={{ color: '#efefefdd' }}>You chose the <span style={{ color: '#ff0999' }}>wrong</span> answer.</Title>
             </div>}
             <Title level={4} style={{ color: '#efefef88' }}>{explain}</Title>
             <div class="o-video">
