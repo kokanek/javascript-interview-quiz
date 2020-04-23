@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "56bf33e6354d4547166ee37fc56931bb",
+    "revision": "56c82988f178dc4bd935eb9d0621b5c0",
     "url": "/javascript-interview-quiz/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/javascript-interview-quiz/static/css/2.7ce4044e.chunk.css"
   },
   {
-    "revision": "3676cf10962e9ab81088",
-    "url": "/javascript-interview-quiz/static/css/main.b6812df5.chunk.css"
+    "revision": "c00411fce4f22072223c",
+    "url": "/javascript-interview-quiz/static/css/main.c1ce1817.chunk.css"
   },
   {
     "revision": "799b64faad55621ba180",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/javascript-interview-quiz/static/js/2.0b9e8a89.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3676cf10962e9ab81088",
-    "url": "/javascript-interview-quiz/static/js/main.0bdb14a2.chunk.js"
+    "revision": "c00411fce4f22072223c",
+    "url": "/javascript-interview-quiz/static/js/main.94b3701c.chunk.js"
   },
   {
     "revision": "73f425f4871f8e1fdcbd",
