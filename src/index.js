@@ -29,7 +29,7 @@ export default class App extends Component {
   }
 
   render() {
-    let {code, options, explain} = questions[0];
+    let {code, options, explain } = questions[0];
 
     return (
       <div className="main">
