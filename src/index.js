@@ -52,7 +52,7 @@ export default class App extends Component {
           />
 
           {options.map((option, index) =>
-            (<div className="optionRow"><h1>[1]</h1><div className="options"><code>{option.value}</code></div>
+            (<div className="optionRow"><h1>{`[${index}]`}</h1><div className="options"><code>{option.value}</code></div>
               <button onClick={this.state.showAnswer ? () => { } : () => this.processAnswer(option.correct)} 
                   className={this.state.showAnswer ? (option.correct ? 'correct' : 'wrong') : ''}><strong>CHOOSE</strong></button>
               </div>)

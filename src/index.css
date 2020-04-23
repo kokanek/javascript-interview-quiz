@@ -72,6 +72,11 @@ body {
   border: none;
 }
 
+.CodeMirror {
+  font-family: Arial, monospace;
+  font-size: 24px;
+}
+
 .wrong {
   background-color: #ff0999;
   border: none;
